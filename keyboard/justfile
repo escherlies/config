@@ -1,0 +1,10 @@
+convert-from4:
+  just _convert from4
+
+convert-from5:
+  just _convert from5
+
+
+_convert from:
+  npx tsc --resolveJsonModule --esModuleInterop convert.ts
+  node convert.js {{from}}
