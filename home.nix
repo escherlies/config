@@ -18,6 +18,7 @@
   home.packages = [
     # Mac tools
     pkgs.aldente
+    pkgs.monitorcontrol
 
     # Dev tools
     pkgs.tmux
@@ -27,6 +28,7 @@
     pkgs.just
     pkgs.thefuck
     pkgs.tree
+    pkgs.watchexec
 
     pkgs.cargo
     pkgs.stripe-cli

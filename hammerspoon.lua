@@ -4,7 +4,7 @@ local hyper = { "cmd", "shift", "alt", "ctrl" }
 hs.alert.show("Config loaded")
 
 
-hs.hotkey.bind(meh, "l", function()
+hs.hotkey.bind(hyper, "l", function()
   hs.reload()
 end)
 
@@ -14,7 +14,7 @@ end)
 -- Useful for when you're listening to music and you're in a call
 -- q(uiet)| w   | f(full) | p
 -- 30%    | 60% | 100%    | play/pause
-hs.hotkey.bind(meh, "q",
+hs.hotkey.bind(hyper, "q",
   function()
     local currentVolume = hs.spotify.getVolume()
     -- Note that Spotify set's the volume to n-1 when you set it to n...
@@ -23,7 +23,7 @@ hs.hotkey.bind(meh, "q",
   end
 )
 
-hs.hotkey.bind(meh, "w",
+hs.hotkey.bind(hyper, "w",
   function()
     local currentVolume = hs.spotify.getVolume()
     -- Note that Spotify set's the volume to n-1 when you set it to n...
@@ -32,7 +32,7 @@ hs.hotkey.bind(meh, "w",
   end
 )
 
-hs.hotkey.bind(meh, "f",
+hs.hotkey.bind(hyper, "f",
   function()
     hs.spotify.setVolume(100)
   end
@@ -40,7 +40,7 @@ hs.hotkey.bind(meh, "f",
 
 -- Tooggle Spotify play/pause
 -- Useful for when you've started a youtube video and you want to pause the music (because )
-hs.hotkey.bind(meh, "p",
+hs.hotkey.bind(hyper, "p",
   function()
     hs.spotify.playpause()
   end
@@ -48,7 +48,7 @@ hs.hotkey.bind(meh, "p",
 
 -- Toggle dark mode
 -- Useful because the "Auto" mode has bad timing
-hs.hotkey.bind(meh, "d",
+hs.hotkey.bind(hyper, "d",
   function()
     hs.osascript.applescript([[
       tell application "System Events"
@@ -61,7 +61,7 @@ hs.hotkey.bind(meh, "d",
 )
 
 
-hs.hotkey.showHotkeys(meh, "h")
+hs.hotkey.showHotkeys(hyper, "h")
 
 -- Application Shortcuts
 local appShortcuts = {
@@ -86,5 +86,5 @@ end
 hs.fnutils.each(appShortcuts, function(config)
   local shortcut = config[1]
   local app = config[2]
-  hs.hotkey.bind(meh, shortcut, function() toggleApplication(app) end)
+  hs.hotkey.bind(hyper, shortcut, function() toggleApplication(app) end)
 end)
