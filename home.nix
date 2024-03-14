@@ -19,6 +19,7 @@
     # Mac tools
     pkgs.aldente
     pkgs.monitorcontrol
+    pkgs.pika # Color Picker
 
     # Dev tools
     pkgs.tmux
@@ -29,6 +30,9 @@
     pkgs.thefuck
     pkgs.tree
     pkgs.watchexec
+    pkgs.bash # pre-installed bash is too old
+    pkgs.coreutils
+    pkgs.git-lfs
 
     pkgs.cargo
     pkgs.stripe-cli
