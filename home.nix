@@ -21,6 +21,10 @@
     pkgs.monitorcontrol
     pkgs.pika # Color Picker
 
+    # Apps
+    pkgs.ffmpeg_5-headless
+    pkgs.ncdu # Disk usage analyzer with an ncurses interface
+
     # Dev tools
     pkgs.tmux
     pkgs.nodejs_20
