@@ -88,3 +88,18 @@ hs.fnutils.each(appShortcuts, function(config)
   local app = config[2]
   hs.hotkey.bind(hyper, shortcut, function() toggleApplication(app) end)
 end)
+
+
+-- Quick search for an fontawesome icon
+hs.hotkey.bind(hyper, "i", function()
+  local button, textInput = hs.dialog.textPrompt("Icon Search", "Search for an icon:")
+
+  if textInput == nil or textInput == "" then
+    return
+  end
+
+  -- Open the Font Awesome website
+  -- Example: https://fontawesome.com/search?q=foo&o=r&s=light&f=classic
+  local url = "https://fontawesome.com/search?q=" .. textInput .. "&o=r&s=light&f=classic"
+  hs.urlevent.openURL(url)
+end)
