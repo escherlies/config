@@ -22,8 +22,7 @@
     pkgs.pika # Color Picker
 
     # Apps
-    pkgs.ffmpeg_5-headless
-    pkgs.ncdu # Disk usage analyzer with an ncurses interface
+    # pkgs.ncdu # Disk usage analyzer with an ncurses interface
 
     # Dev tools
     pkgs.tmux
@@ -42,11 +41,11 @@
     pkgs.stripe-cli
 
     pkgs.nodePackages.nodemon
-    pkgs.nodePackages.purs-tidy
+    # pkgs.nodePackages.purs-tidy
 
-    pkgs.elmPackages.elm
-    pkgs.elmPackages.elm-format
-    pkgs.elmPackages.elm-test-rs
+    # pkgs.elmPackages.elm
+    # pkgs.elmPackages.elm-format
+    # pkgs.elmPackages.elm-test-rs
 
     # Blogging
     pkgs.zola
@@ -55,8 +54,13 @@
     pkgs.asciiquarium-transparent
 
     # Nix
-    pkgs.nixfmt
+    pkgs.nixfmt-classic
     pkgs.nil
+
+    # Misc
+    pkgs.bun
+    pkgs.caddy
+    pkgs.git
   ];
 
   nixpkgs.config.allowUnfree = true;
