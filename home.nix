@@ -61,6 +61,9 @@
     pkgs.bun
     pkgs.caddy
     pkgs.git
+    pkgs.yarn
+    pkgs.nixos-rebuild
+    pkgs.difftastic
   ];
 
   nixpkgs.config.allowUnfree = true;
