@@ -76,4 +76,7 @@
   programs.home-manager.enable = true;
 
   programs.zellij.enable = true;
+  programs.zellij.settings = {
+    default_shell = "fish";
+  };
 }
