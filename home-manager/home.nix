@@ -75,15 +75,4 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  # Enable Neovim
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    viAlias = true;
-    extraConfig = ''
-      set number
-      set relativenumber
-      set colorcolumn=80
-    '';
-  };
 }
