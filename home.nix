@@ -83,6 +83,7 @@
     extraConfig = ''
       set number
       set relativenumber
+      set colorcolumn=80
     '';
   };
 }
