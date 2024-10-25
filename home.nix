@@ -15,55 +15,55 @@
   # release notes.
   home.stateVersion = "24.05";
 
-  home.packages = [
+  home.packages = with pkgs; [
     # Mac tools
-    pkgs.aldente
-    pkgs.monitorcontrol
-    pkgs.pika # Color Picker
+    aldente
+    monitorcontrol
+    pika # Color Picker
 
     # Apps
-    pkgs.ncdu # Disk usage analyzer with an ncurses interface
+    ncdu # Disk usage analyzer with an ncurses interface
 
     # Dev tools
-    pkgs.tmux
-    pkgs.nodejs_20
-    pkgs.mongodb-tools
-    pkgs.tokei
-    pkgs.just
-    pkgs.thefuck
-    pkgs.tree
-    pkgs.watchexec
-    pkgs.bash # pre-installed bash is too old
-    pkgs.coreutils
-    pkgs.git-lfs
+    tmux
+    nodejs_20
+    mongodb-tools
+    tokei
+    just
+    thefuck
+    tree
+    watchexec
+    bash # pre-installed bash is too old
+    coreutils
+    git-lfs
 
-    pkgs.cargo
-    pkgs.stripe-cli
+    cargo
+    stripe-cli
 
-    pkgs.nodePackages.nodemon
-    # pkgs.nodePackages.purs-tidy
+    nodePackages.nodemon
+    # nodePackages.purs-tidy
 
-    # pkgs.elmPackages.elm
-    # pkgs.elmPackages.elm-format
-    # pkgs.elmPackages.elm-test-rs
+    # elmPackages.elm
+    # elmPackages.elm-format
+    # elmPackages.elm-test-rs
 
     # Blogging
-    pkgs.zola
+    zola
 
     # Misc
-    pkgs.asciiquarium-transparent
+    asciiquarium-transparent
 
     # Nix
-    pkgs.nixfmt-rfc-style
-    pkgs.nil
+    nixfmt-rfc-style
+    nil
 
     # Misc
-    pkgs.bun
-    pkgs.caddy
-    pkgs.git
-    pkgs.yarn
-    pkgs.nixos-rebuild
-    pkgs.difftastic
+    bun
+    caddy
+    git
+    yarn
+    nixos-rebuild
+    difftastic
   ];
 
   nixpkgs.config.allowUnfree = true;
