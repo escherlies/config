@@ -22,7 +22,7 @@
     pkgs.pika # Color Picker
 
     # Apps
-    # pkgs.ncdu # Disk usage analyzer with an ncurses interface
+    pkgs.ncdu # Disk usage analyzer with an ncurses interface
 
     # Dev tools
     pkgs.tmux
@@ -54,7 +54,7 @@
     pkgs.asciiquarium-transparent
 
     # Nix
-    pkgs.nixfmt-classic
+    pkgs.nixfmt-rfc-style
     pkgs.nil
 
     # Misc
