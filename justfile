@@ -1,2 +1,2 @@
 switch:
-  home-manager switch
+  home-manager switch --flake ./home-manager
