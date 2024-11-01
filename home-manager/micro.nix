@@ -5,7 +5,7 @@
   programs.micro = {
     enable = true;
     settings = {
-      colorscheme = "atom";
+      colorscheme = "cmc-16";
       colorcolumn = 80;
     };
   };
