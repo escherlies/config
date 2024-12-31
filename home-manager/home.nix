@@ -37,7 +37,9 @@
     coreutils
     git-lfs
 
-    cargo
+    # Rust
+    rustup
+
     stripe-cli
 
     nodePackages.nodemon
@@ -64,6 +66,7 @@
     yarn
     nixos-rebuild
     difftastic
+    deno
   ];
 
   nixpkgs.config.allowUnfree = true;
