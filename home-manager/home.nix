@@ -62,7 +62,6 @@
     # Misc
     bun
     caddy
-    git
     yarn
     nixos-rebuild
     difftastic
@@ -82,4 +81,19 @@
   programs.zellij.settings = {
     default_shell = "fish";
   };
+
+  programs.git = {
+    enable = true;
+    userName = "Enrico Scherlies";
+    userEmail = "e.scherlies@pm.me";
+    ignores = [
+      ".note.*"
+      ".vscode"
+      ".DS_Store"
+      ".notes"
+      "**/__ignore__*"
+
+    ];
+  };
+
 }
