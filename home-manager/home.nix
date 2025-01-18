@@ -94,6 +94,10 @@
 
     ];
 
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+
     difftastic.enable = true;
   };
 
