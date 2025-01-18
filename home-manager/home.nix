@@ -64,7 +64,6 @@
     caddy
     yarn
     nixos-rebuild
-    difftastic
     deno
   ];
 
@@ -94,6 +93,8 @@
       "**/__ignore__*"
 
     ];
+
+    difftastic.enable = true;
   };
 
 }
