@@ -24,7 +24,7 @@
         # the path to your home.nix.
         modules = [
           ./home.nix
-          ./micro.nix
+          ./neovim.nix
         ];
 
         # Optionally use extraSpecialArgs
