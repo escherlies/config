@@ -10,45 +10,10 @@ end)
 
 
 
--- Spotify volume controls
--- Useful for when you're listening to music and you're in a call
--- q(uiet)| w   | f(full) | p
--- 30%    | 60% | 100%    | play/pause
-hs.hotkey.bind(hyper, "q",
-  function()
-    local currentVolume = hs.spotify.getVolume()
-    -- Note that Spotify set's the volume to n-1 when you set it to n...
-    local newVolume = currentVolume == 29 and 100 or 30
-    hs.spotify.setVolume(newVolume)
-  end
-)
-
-hs.hotkey.bind(hyper, "w",
-  function()
-    local currentVolume = hs.spotify.getVolume()
-    -- Note that Spotify set's the volume to n-1 when you set it to n...
-    local newVolume = currentVolume == 60 and 100 or 60
-    hs.spotify.setVolume(newVolume)
-  end
-)
-
-hs.hotkey.bind(hyper, "f",
-  function()
-    hs.spotify.setVolume(100)
-  end
-)
-
--- Tooggle Spotify play/pause
--- Useful for when you've started a youtube video and you want to pause the music (because )
-hs.hotkey.bind(hyper, "p",
-  function()
-    hs.spotify.playpause()
-  end
-)
 
 -- Toggle dark mode
 -- Useful because the "Auto" mode has bad timing
-hs.hotkey.bind(hyper, "d",
+hs.hotkey.bind(hyper, ";",
   function()
     hs.osascript.applescript([[
       tell application "System Events"
@@ -65,10 +30,10 @@ hs.hotkey.showHotkeys(hyper, "h")
 
 -- Application Shortcuts
 local appShortcuts = {
-  { "t", "iTerm" },
-  { "s", "Spotify" },
-  { "c", "Visual Studio Code" },
-  { "r", "Firefox" },
+  { "i", "iTerm" },
+  { "e", "Visual Studio Code" },
+  { "n", "Firefox" },
+  { "o", "Firefox Developer Edition" },
 }
 
 -- Store the last active application
@@ -109,7 +74,7 @@ end)
 
 
 -- Quick search for an fontawesome icon
-hs.hotkey.bind(hyper, "i", function()
+hs.hotkey.bind(hyper, "u", function()
   local button, textInput = hs.dialog.textPrompt("Icon Search", "Search for an icon:")
 
   if textInput == nil or textInput == "" then
