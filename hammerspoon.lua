@@ -36,31 +36,13 @@ local appShortcuts = {
   { "o", "Firefox Developer Edition" },
 }
 
--- Store the last active application
-local lastApp = nil
-
--- Watch for application activations and store the last one
-hs.application.watcher.new(function(appName, event, app)
-  if event == hs.application.watcher.activated then
-    -- Store the last application, but avoid replacing it with the same app consecutively
-    if lastApp ~= app then
-      lastApp = app
-    end
-  end
-end):start()
-
+-- Function to toggle the application
 local function toggleApplication(appName)
-  local frontmostApp = hs.application.frontmostApplication()
   local app = hs.application.get(appName)
 
   if app and app:isFrontmost() then
-    -- Switch back to the last used application instantly
-    if lastApp and lastApp:isRunning() then
-      lastApp:activate()
-    end
+    app:hide()
   else
-    -- Launch or focus the requested app and track the previous one
-    lastApp = frontmostApp
     hs.application.launchOrFocus(appName)
   end
 end
