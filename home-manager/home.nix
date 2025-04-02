@@ -65,6 +65,12 @@
     yarn
     nixos-rebuild
     deno
+
+    typst
+    poppler_utils
+
+    comma
+    croc
   ];
 
   nixpkgs.config.allowUnfree = true;
