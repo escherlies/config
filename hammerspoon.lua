@@ -34,17 +34,12 @@ local appShortcuts = {
   { "e", "Visual Studio Code" },
   { "n", "Firefox" },
   { "o", "Firefox Developer Edition" },
+  { "s", "Signal" },
 }
 
 -- Function to toggle the application
 local function toggleApplication(appName)
-  local app = hs.application.get(appName)
-
-  if app and app:isFrontmost() then
-    app:hide()
-  else
-    hs.application.launchOrFocus(appName)
-  end
+  hs.application.launchOrFocus(appName)
 end
 
 
@@ -65,6 +60,7 @@ hs.hotkey.bind(hyper, "u", function()
 
   -- Open the Font Awesome website
   -- Example: https://fontawesome.com/search?q=foo&o=r&s=light&f=classic
-  local url = "https://fontawesome.com/search?q=" .. textInput .. "&o=r&s=light&f=classic"
+  -- local url = "https://fontawesome.com/search?q=" .. textInput .. "&o=r&s=light&f=classic"
+  local url = "https://duckduckgo.com/?q=" .. textInput
   hs.urlevent.openURL(url)
 end)
