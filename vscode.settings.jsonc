@@ -1,123 +1,93 @@
 {
+  // Color and highlighting settings
+  "color-highlight.markRuler": false,
+  // DeepL translation settings
   "deepl.formality": "default",
+  "deepl.splitSentences": "1",
+  "deepl.tagHandling": "off",
+  "deepl.translationMode": "Replace",
+  // Diff editor settings
+  "diffEditor.codeLens": true,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  // Editor appearance and behavior
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.codeLens": true,
+  "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 13,
   "editor.fontLigatures": "'cv02', 'cv11','ss01','ss02','ss03', 'ss05','ss11', 'ss08', 'cv24', 'cv06', 'cv30', 'calt' 1",
-  "telemetry.telemetryLevel": "off",
-  "window.commandCenter": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.lineNumbers": "relative",
-  "deepl.tagHandling": "off",
-  "deepl.splitSentences": "1",
-  "diffEditor.codeLens": true,
-  "editor.codeLens": true,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "other": "on",
+    "strings": "on"
+  },
+  "editor.tabSize": 2,
+  // Explorer settings
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.sortOrderLexicographicOptions": "upper",
+  // File settings
+  "files.readonlyInclude": {
+    "**/.cargo/registry/src/**/*.rs": true,
+    "**/lib/rustlib/src/rust/library/**/*.rs": true
+  },
+  // Git settings
+  "git.autofetch": true,
+  "git.blame.editorDecoration.enabled": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  // GitLens settings
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.plusFeatures.enabled": false,
-  "deepl.translationMode": "Replace",
-  "editor.formatOnSave": true,
-  "[nix]": {
-    "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
+  // Language-specific settings
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "typescript.preferences.useAliasesForRenames": false,
-  "typescript.preferences.quoteStyle": "double",
-  "quickNotes.fileName": "./.vscode/.notes.md",
-  "terminal.external.osxExec": "iTerm.app",
-  "git.autofetch": true,
-  "editor.tabSize": 2,
-  "explorer.confirmDelete": false,
-  "window.autoDetectColorScheme": true,
-  "window.autoDetectHighContrast": false,
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "tailwindCSS.experimental.classRegex": [
-    "class \"([^\"]*)", // class "..."
-    "class = \"([^\"]*)", // class = "..."
-    "classList\n.*\\( \"(.*)\"", // Elm classList
-    "\"(.*)\".*-- @tailwind" // Elm classList
-  ],
-  "tailwindCSS.includeLanguages": {
-    "elm": "elm"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "on"
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "workbench.colorTheme": "BBEdit Light",
-  "workbench.colorCustomizations": {
-    "[BBEdit Light]": {
-      "activityBar.background": "#f7f7f7",
-      "activityBar.foreground": "#141314",
-      "statusBar.background": "#f7f7f7",
-      "statusBar.foreground": "#141314",
-    },
-  },
-  "zenMode.fullScreen": false,
-  "zenMode.showTabs": "none",
-  "markdown-checkbox.checkmark": "x",
-  "markdown-checkbox.typeOfBulletPoint": "-",
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.editor.empty.hint": "hidden",
-  "editor.accessibilitySupport": "off",
-  "editor.find.seedSearchStringFromSelection": "selection",
-  "editor.minimap.enabled": false,
-  "color-highlight.markRuler": false,
-  "explorer.sortOrderLexicographicOptions": "upper",
-  "roc-lang.language-server.exe": "/Users/enrico/Developer/_playground/roc-lang/roc_nightly/roc_language_server",
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "explorer.confirmPasteNative": false,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true,
-    "**/package-lock.json": true,
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports.biome": "explicit"
-  },
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[mdx]": {
     "editor.defaultFormatter": "unifiedjs.vscode-mdx"
   },
-  "files.readonlyInclude": {
-    "**/.cargo/registry/src/**/*.rs": true,
-    "**/lib/rustlib/src/rust/library/**/*.rs": true,
+  "[nix]": {
+    "editor.defaultFormatter": "brettm12345.nixfmt-vscode"
   },
-  "editor.inlayHints.enabled": "on",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "problems.sortOrder": "severity",
-  "workbench.preferredLightColorTheme": "Kai Light",
-  "editor.formatOnPaste": true,
-  "diffEditor.renderSideBySide": true,
-  "terminal.integrated.copyOnSelection": true,
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typst]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
@@ -125,16 +95,69 @@
   "[typst-code]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  // Markdown settings
+  "markdown-checkbox.checkmark": "x",
+  "markdown-checkbox.typeOfBulletPoint": "-",
+  // Problems view settings
+  "problems.sortOrder": "severity",
+  // Quick Notes settings
+  "quickNotes.fileName": "./.vscode/.notes.md",
+  // Search settings
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  // Tailwind CSS settings
+  "tailwindCSS.experimental.classRegex": [
+    "class \"([^\"]*)",
+    "class = \"([^\"]*)",
+    "classList\n.*\\( \"(.*)\"",
+    "\"(.*)\".*-- @tailwind"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "elm": "elm"
+  },
+  // Telemetry settings
+  "telemetry.telemetryLevel": "off",
+  // Terminal settings
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.copyOnSelection": true,
+  // TinyMist settings
+  "tinymist.formatterMode": "typstyle",
+  // Tool settings
+  "cline.disableBrowserTool": true,
+  // TypeScript settings
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Window settings
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": false,
+  "window.commandCenter": false,
+  // Workbench settings
+  "workbench.colorCustomizations": {
+    "[BBEdit Light]": {
+      "activityBar.background": "#f7f7f7",
+      "activityBar.foreground": "#141314",
+      "statusBar.background": "#f7f7f7",
+      "statusBar.foreground": "#141314"
+    }
+  },
+  "workbench.colorTheme": "BBEdit Light",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
-  "tinymist.formatterMode": "typstyle",
-  "explorer.compactFolders": false,
-  "diffEditor.experimental.showMoves": true,
-  "git.blame.editorDecoration.enabled": false,
-  "cline.disableBrowserTool": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Kai Light",
+  // Zen Mode settings
+  "zenMode.fullScreen": false,
+  "zenMode.showTabs": "none",
+  // Language-specific path settings
+  "roc-lang.language-server.exe": "/Users/enrico/Developer/_playground/roc-lang/roc_nightly/roc_language_server"
 }
