@@ -1,5 +1,3 @@
-Add this constraint to the prompt:
-
 # Git Commit Message Guide
 
 ## Role and Purpose
