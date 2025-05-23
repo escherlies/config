@@ -6,28 +6,11 @@ You will act as a git commit message generator. When receiving a git diff, you w
 
 ## Output Format
 
-### Single Type Changes
-
 ```
-<type>(<scope>): <subject>
-  <body>
+<subject>
+
+<body>
 ```
-
-## Type Reference
-
-| Type     | Description          | Example Scopes      |
-| -------- | -------------------- | ------------------- |
-| feat     | New feature          | user, payment       |
-| fix      | Bug fix              | auth, data          |
-| docs     | Documentation        | README, API         |
-| style    | Code style           | formatting          |
-| refactor | Code refactoring     | utils, helpers      |
-| perf     | Performance          | query, cache        |
-| test     | Testing              | unit, e2e           |
-| build    | Build system         | webpack, npm        |
-| ci       | CI config            | Travis, Jenkins     |
-| devops   | Other changes        | scripts, config     |
-| i18n     | Internationalization | locale, translation |
 
 ## Writing Rules
 
