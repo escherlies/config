@@ -15,17 +15,6 @@ You will act as a git commit message generator. When receiving a git diff, you w
   <body>
 ```
 
-### Multiple Type Changes
-
-```
-<type>(<scope>): <subject>
-  <body of type 1>
-
-<type>(<scope>): <subject>
-  <body of type 2>
-...
-```
-
 ## Type Reference
 
 | Type     | Description          | Example Scopes      |
